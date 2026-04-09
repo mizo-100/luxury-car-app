@@ -1,74 +1,31 @@
-# React + TypeScript + Vite
+# Luxury Car Dealer App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+厳選された高級車の魅力を最大限に引き出す、モダンな在庫管理・閲覧デモアプリです。
+React と TypeScript を活用し、ラグジュアリーブランドの世界観を UI/UX で表現しました。
 
-Currently, two official plugins are available:
+## --公開URL--
+https://luxury-car-app.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## --主な機能--
+- **ダイナミック・ヒーロースライダー**: `useEffect` を用いた自動フェードアニメーション。
+- **インタラクティブ・カード**: 在庫車両のグリッド表示と、ホバーエフェクト。
+- **詳細モーダル**: 条件付きレンダリングを活用した、車両詳細情報のポップアップ表示。
+- **レスポンシブ対応**: PC、タブレット、スマホそれぞれのデバイスに最適化したレイアウト。
 
-## React Compiler
+## --使用技術--
+- **Frontend**: React (Vite), TypeScript
+- **Styling**: Tailwind CSS
+- **Deployment**: Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## --こだわったポイント--
+1. **コンポーネントの再利用性**: 
+   車の一覧 (`CarCard`) や詳細表示 (`CarModal`) をコンポーネント化し、データの流れを Props やスプレッド構文でシンプルに管理しました。
+2. **ラグジュアリーな演出**:
+   高級車サイトに相応しい「余白」と「フォントの強弱」を意識し、Tailwind CSS の `transition` や `scale` アニメーションを組み合わせて滑らかな動きを実現しました。
+3. **安全なタイマー管理**:
+   スライダーの `setInterval` は、コンポーネントのアンマウント時に適切にクリーンアップし、メモリリークを防ぐ設計にしています。
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-"# luxury-car-app" 
+## --開発環境のセットアップ
+1. リポジトリをクローン
+   ```bash
+   git clone [リポジトリのURL]
