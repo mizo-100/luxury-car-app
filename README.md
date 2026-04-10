@@ -28,4 +28,4 @@ https://luxury-car-app.vercel.app/
 ## --開発環境のセットアップ
 1. リポジトリをクローン
    ```bash
-   git clone [リポジトリのURL]
+   git clone [https://github.com/mizo-100/luxury-car-app.git](https://github.com/mizo-100/luxury-car-app.git)
