@@ -25,5 +25,32 @@ export const CAR_DATA = [
     price: "25,000,000",
     image: "https://images.unsplash.com/photo-1606611013016-969c19ba27bb?q=80&w=800",
     category: "Luxury SUV"
-  }
+  },
+  {
+    id: 4,
+    make: "Mercedes-Benz",
+    model: "G 63 AMG",
+    year: 2024,
+    price: "28,500,000",
+    image: "https://images.unsplash.com/photo-1520031441872-265e4ff70366?auto=format&fit=crop&q=80&w=1600",
+    category: "SUV",
+  },
+  {
+    id: 5,
+    make: "Aston Martin",
+    model: "DB11",
+    year: 2023,
+    price: "26,800,000",
+    image: "https://images.unsplash.com/photo-1605515298946-d062f2e9da53?auto=format&fit=crop&q=80&w=1600",
+    category: "Coupe",
+  },
+  {
+    id: 6,
+    make: "Audi",
+    model: "RS e-tron GT",
+    year: 2024,
+    price: "18,900,000",
+    image: "https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=1600",
+    category: "Electric",
+  },
 ];

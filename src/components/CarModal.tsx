@@ -31,41 +31,42 @@ export const CarModal = ({ car, onClose }: Props) => {
                 </div>
 
                 <div className="md:w-2/5 p-10 md:p-14 flex flex-col bg-white">
-                <div className="grow">
-                    <span className="text-[10px] tracking-[0.5em] text-amber-700 font-bold uppercase mb-4 block">
-                    {car.make}
-                    </span>
-                    <h2 className="text-4xl font-extralight tracking-tighter text-slate-900 mb-2">
-                    {car.model}
-                    </h2>
-                    <p className="text-gray-400 text-sm mb-8">{car.year} Model</p>
-                    <div className="space-y-5 border-y border-gray-100 py-8">
-                    <div className="flex justify-between items-center">
-                        <span className="text-[10px] uppercase tracking-widest text-gray-400">Category</span>
-                        <span className="text-sm font-light">{car.category}</span>
-                    </div>
-                    <div className="flex justify-between items-center">
-                        <span className="text-[10px] uppercase tracking-widest text-gray-400">Status</span>
-                        <span className="text-sm font-light text-green-700">In Stock</span>
-                    </div>
-                    <div className="flex justify-between items-end">
-                        <span className="text-[10px] uppercase tracking-widest text-gray-400">Price</span>
-                        <span className="text-2xl font-extralight tracking-tighter">
-                        <span className="text-xs mr-1">¥</span>{car.price}
+                    <div className="grow">
+                        <span className="text-[10px] tracking-[0.5em] text-amber-700 font-bold uppercase mb-4 block">
+                        {car.make}
                         </span>
-                    </div>
+                        <h2 className="text-4xl font-extralight tracking-tighter text-slate-900 mb-2">
+                        {car.model}
+                        </h2>
+                        <p className="text-gray-400 text-sm mb-8">{car.year} Model</p>
+                        <div className="space-y-5 border-y border-gray-100 py-8">
+                            <div className="flex justify-between items-center">
+                                <span className="text-[10px] uppercase tracking-widest text-gray-400">Category</span>
+                                <span className="text-sm font-light">{car.category}</span>
+                            </div>
+
+                            <div className="flex justify-between items-center">
+                                <span className="text-[10px] uppercase tracking-widest text-gray-400">Status</span>
+                                <span className="text-sm font-light text-green-700">In Stock</span>
+                            </div>
+
+                            <div className="flex justify-between items-end">
+                                <span className="text-[10px] uppercase tracking-widest text-gray-400">Price</span>
+                                <span className="text-2xl font-extralight tracking-tighter">
+                                <span className="text-xs mr-1">¥</span>{car.price}
+                                </span>
+                            </div>
+                        </div>
+
+                        <p className="mt-8 text-gray-500 text-sm leading-relaxed font-light">
+                        最高峰のパフォーマンスと、妥協のないクラフトマンシップ。
+                        この一台が、あなたのガレージに新たな物語を刻みます。
+                        </p>
                     </div>
 
-                    <p className="mt-8 text-gray-500 text-sm leading-relaxed font-light">
-                    最高峰のパフォーマンスと、妥協のないクラフトマンシップ。
-                    この一台が、あなたのガレージに新たな物語を刻みます。
-                    </p>
-                </div>
-
-                {/* アクションボタン */}
-                <button className="mt-12 w-full bg-[#1a1a1a] text-white py-5 text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-amber-800 transition-colors duration-500">
-                    Inquire Now
-                </button>
+                    <button className="mt-12 w-full bg-[#1a1a1a] text-white py-5 text-[10px] tracking-[0.3em] uppercase font-bold hover:bg-amber-800 transition-colors duration-500">
+                        Inquire Now
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { CAR_DATA } from "../data/cars";
 
-const sliderCars = CAR_DATA.slice(0, 3);
+const sliderCars = CAR_DATA.slice(0, 4);
 
 export const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,26 +52,23 @@ export const Slider = () => {
                   {car.price.toLocaleString()}
                 </p>
                 <div className="h-1px w-20 bg-amber-500/50" />
-                <span className="text-[10px] tracking-[0.3em] uppercase text-gray-400">View Detail</span>
+                  <span className="text-[10px] tracking-[0.3em] uppercase text-gray-400"></span>
               </div>
             </div>
           </div>
         </div>
       ))}
-
       <div className="absolute right-12 top-1/2 -translate-y-1/2 flex flex-col gap-6 z-30">
         {sliderCars.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
             className="group flex items-center gap-4"
-          >
-            <span className={`text-[10px] transition-all duration-500 ${
-              index === currentIndex ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"
-            }`}>0{index + 1}</span>
+          >     
             <div className={`w-12 h-1px transition-all duration-500 ${
-              index === currentIndex ? "bg-white w-16" : "bg-white/20"
-            }`} />
+                index === currentIndex ? "bg-white w-16" : "bg-white/20"
+              }`} 
+            />
           </button>
         ))}
       </div>
