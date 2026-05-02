@@ -1,7 +1,7 @@
 export const CAR_DATA = [
     {
     id: "abstract",
-    make: "PORSSHE",
+    make: "PORSCHE",
     model: "911 Carrera GTS",
     year: 2023,
     price: "19,800,000",
